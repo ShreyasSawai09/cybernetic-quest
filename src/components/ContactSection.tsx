@@ -52,9 +52,9 @@ const ContactSection = () => {
             </h2>
           </div>
 
-          <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="max-w-2xl mx-auto flex flex-col items-center">
             {/* Contact links */}
-            <div className="space-y-4">
+            <div className="space-y-4 w-full">
               <div className="bg-card/80 backdrop-blur-sm rounded-lg p-6 cyber-border mb-6">
                 <h3 className="font-mono text-sm text-primary mb-4">
                   {'>'} AVAILABLE_CHANNELS:
