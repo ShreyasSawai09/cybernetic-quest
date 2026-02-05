@@ -11,22 +11,22 @@ const contactLinks = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'shreyassawai@gmail.com',
-    href: 'mailto:shreyassawai@gmail.com',
+    value: 'shreyasdsawai@gmail.com',
+    href: 'mailto:shreyasdsawai@gmail.com',
     command: 'mail -s "Hello"',
   },
   {
     icon: Phone,
     label: 'Phone',
-    value: '+46 73 401 8869',
-    href: 'tel:+46734018869',
+    value: '+46 767426076',
+    href: 'tel:+46767426076',
     command: 'dial --secure',
   },
   {
     icon: Linkedin,
     label: 'LinkedIn',
-    value: 'linkedin.com/in/shreyas-sawai',
-    href: 'https://linkedin.com/in/shreyas-sawai',
+    value: 'linkedin.com/in/shreyassawai',
+    href: 'https://www.linkedin.com/in/shreyassawai/',
     command: 'connect --professional',
   },
   {

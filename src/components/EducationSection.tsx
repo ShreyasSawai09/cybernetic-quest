@@ -9,7 +9,7 @@ const education = [
     location: 'Stockholm, Sweden',
     period: '2024 – 2026',
     status: 'IN_PROGRESS',
-    gpa: '4.0/5.0',
+    gpa: '4.5/5.0',
     courses: [
       'Network Security',
       'Applied Cryptography',
@@ -31,7 +31,7 @@ const education = [
     location: 'Pune, India',
     period: '2017 – 2021',
     status: 'COMPLETED',
-    gpa: '8.85/10',
+    gpa: '9.35/10',
     courses: [
       'Data Structures',
       'Operating Systems',

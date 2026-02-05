@@ -26,7 +26,7 @@ const Footer = () => {
             <span>© {currentYear} Shreyas Sawai</span>
             <span className="hidden sm:inline">|</span>
             <span className="hidden sm:flex items-center gap-1">
-              Built with <Heart className="w-3 h-3 text-destructive" /> & Security
+              Built with <Heart className="w-3 h-3 text-destructive" /> for Security
             </span>
           </div>
         </div>
