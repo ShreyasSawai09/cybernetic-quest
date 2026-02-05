@@ -1,11 +1,5 @@
-import { useState } from 'react';
-import { Mail, Phone, Linkedin, MapPin, Send, CheckCircle, Loader2 } from 'lucide-react';
+import { Mail, Phone, Linkedin, MapPin } from 'lucide-react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Label } from '@/components/ui/label';
-import { useToast } from '@/hooks/use-toast';
 
 const contactLinks = [
   {
@@ -40,43 +34,6 @@ const contactLinks = [
 
 const ContactSection = () => {
   const { ref, isVisible } = useScrollAnimation({ threshold: 0.1 });
-  const { toast } = useToast();
-  const [formState, setFormState] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000));
-
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    toast({
-      title: "Connection Established!",
-      description: "Your message has been sent successfully. I'll respond soon.",
-    });
-
-    // Reset form after delay
-    setTimeout(() => {
-      setFormState({ name: '', email: '', subject: '', message: '' });
-      setIsSubmitted(false);
-    }, 3000);
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormState(prev => ({
-      ...prev,
-      [e.target.name]: e.target.value,
-    }));
-  };
 
   return (
     <section id="contact" className="py-20 relative bg-secondary/20">
@@ -151,104 +108,6 @@ const ContactSection = () => {
               </div>
             </div>
 
-            {/* Contact form */}
-            <div className="bg-card/80 backdrop-blur-sm rounded-lg p-6 cyber-border">
-              <h3 className="font-mono text-sm text-primary mb-6">
-                {'>'} INITIATE_TRANSMISSION:
-              </h3>
-
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <Label htmlFor="name" className="font-mono text-sm text-muted-foreground">
-                      NAME:
-                    </Label>
-                    <Input
-                      id="name"
-                      name="name"
-                      value={formState.name}
-                      onChange={handleChange}
-                      required
-                      className="bg-secondary/30 border-border/50 focus:border-primary font-mono"
-                      placeholder="John Doe"
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="email" className="font-mono text-sm text-muted-foreground">
-                      EMAIL:
-                    </Label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      value={formState.email}
-                      onChange={handleChange}
-                      required
-                      className="bg-secondary/30 border-border/50 focus:border-primary font-mono"
-                      placeholder="john@example.com"
-                    />
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="subject" className="font-mono text-sm text-muted-foreground">
-                    SUBJECT:
-                  </Label>
-                  <Input
-                    id="subject"
-                    name="subject"
-                    value={formState.subject}
-                    onChange={handleChange}
-                    required
-                    className="bg-secondary/30 border-border/50 focus:border-primary font-mono"
-                    placeholder="Security Consultation Request"
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="message" className="font-mono text-sm text-muted-foreground">
-                    MESSAGE:
-                  </Label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    value={formState.message}
-                    onChange={handleChange}
-                    required
-                    rows={5}
-                    className="bg-secondary/30 border-border/50 focus:border-primary font-mono resize-none"
-                    placeholder="Your secure message..."
-                  />
-                </div>
-
-                <Button
-                  type="submit"
-                  disabled={isSubmitting || isSubmitted}
-                  className={`w-full font-mono transition-all ${
-                    isSubmitted
-                      ? 'bg-cyber-green text-white'
-                      : 'cyber-glow bg-primary text-primary-foreground hover:bg-primary/90'
-                  }`}
-                >
-                  {isSubmitting ? (
-                    <>
-                      <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-                      ESTABLISHING_CONNECTION...
-                    </>
-                  ) : isSubmitted ? (
-                    <>
-                      <CheckCircle className="w-4 h-4 mr-2" />
-                      CONNECTION_ESTABLISHED ✓
-                    </>
-                  ) : (
-                    <>
-                      <Send className="w-4 h-4 mr-2" />
-                      {'>'} TRANSMIT_MESSAGE
-                    </>
-                  )}
-                </Button>
-              </form>
-            </div>
           </div>
         </div>
       </div>
