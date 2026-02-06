@@ -22,17 +22,50 @@ const experiences = [
     company: 'Icertis',
     role: 'Software Engineer',
     location: 'Pune, India',
-    period: 'July 2021 – July 2024',
+    period: 'July 2023 – July 2024',
     status: 'COMPLETED',
     type: 'MISSION_BETA',
     achievements: [
-      'Engineered secure microservices architecture processing 100K+ contracts daily',
+      'Integrated the ICI platform with client systems including Salesforce, SAP Ariba, Coupa, DocuSign, AdobeSign, and various CRM platforms via APIs using SAML, OAuth, and API authentication, enhancing customer-facing features through API development.',
+      'Single handily owned and resolved multiple critical CIA issues with Sev 1 priority to unblock customers in production environments. Improved UI efficiency by 75% through critical issue resolution, debugging, and backlog item management.',
       'Implemented OAuth 2.0 and JWT-based authentication systems',
+      'Led migration to DocuSign with enhanced security protocols',
+      'Awarded "Best Performer" award for reducing the bug backlog by 40%',
+      'Mentored and led a team of three junior engineers (SE-1) and five software engineering interns to significantly reduce the bug backlog by 40%, achieving improved response times and team efficiency.',
+    ],
+    tech: ['C#', '.NET', 'Azure', 'SQL Server', 'SAP Ariba', 'DocuSign', 'AdobeSign', 'API Integration', 'Git'],
+  },
+  {
+    id: 2,
+    company: 'Icertis',
+    role: 'Associate Software Engineer',
+    location: 'Pune, India',
+    period: 'July 2021 – June 2023',
+    status: 'COMPLETED',
+    type: 'MISSION_BETA',
+    achievements: [
+      'Managed post-go-live solutions and customizations of the ICI product using the .NET framework. Developed SQL queries to generate precise data reports of failed transactions, facilitating efficient backlog processing and issue resolution.',
+      'Designed and implemented an application health monitoring service, reducing troubleshooting time by 40% ensuring high system availability.',
       'Led migration to DocuSign with enhanced security protocols',
       'Awarded "Rising Star" recognition 5 consecutive quarters',
     ],
     tech: ['C#', '.NET', 'Azure', 'SQL Server', 'Docker', 'API Integration', 'Git'],
   },
+  {
+    id: 2,
+    company: 'Icertis',
+    role: 'Intern',
+    location: 'Pune, India',
+    period: 'Jan 2021 – June 2021',
+    status: 'COMPLETED',
+    type: 'MISSION_BETA',
+    achievements: [
+      'Developed three full-stack web applications from scratch using the .NET MVC framework, serving 60+ internal teams for task management and automation.',
+      'Built an automated tool suite named ToolMaster, increasing departmental productivity by 10x.',
+      'Used Selenium to develop a web scraping and alerting system, reducing workload on Cloud Operations by automating repetitive monitoring tasks.',
+    ],
+    tech: ['C#', '.NET', 'Azure', 'SQL Server', 'Selenium', 'Tool Automation'],
+  }
 ];
 
 const ExperienceSection = () => {
