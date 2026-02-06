@@ -5,9 +5,9 @@ const experiences = [
   {
     id: 1,
     company: 'Ericsson',
-    role: 'Security Analyst Intern (AI & Telecom Security)',
+    role: 'Intern (AI & Telecom Security)',
     location: 'Stockholm, Sweden',
-    period: 'May 2025 – Present',
+    period: 'March 2025 – Present',
     status: 'ACTIVE',
     type: 'MISSION_ALPHA',
     achievements: [
