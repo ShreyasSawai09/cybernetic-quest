@@ -15,7 +15,7 @@ const experiences = [
       'Implementing automated traffic flow analysis for 5G infrastructure',
       'Building secure monitoring dashboards with real-time threat visualization',
     ],
-    tech: ['Python', 'PyTorch', 'Kubernetes', 'Prometheus', 'Grafana'],
+    tech: ['Python', 'Locust', 'HPing3', 'Kubernetes', 'Reinforcement Learning', 'Git'],
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ const experiences = [
       'Led migration to DocuSign with enhanced security protocols',
       'Awarded "Rising Star" recognition 5 consecutive quarters',
     ],
-    tech: ['C#', '.NET', 'Azure', 'SQL Server', 'Docker', 'Kubernetes'],
+    tech: ['C#', '.NET', 'Azure', 'SQL Server', 'Docker', 'API Integration', 'Git'],
   },
 ];
 

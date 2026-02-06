@@ -11,11 +11,12 @@ const skillCategories = [
     color: 'cyber-glow',
     skills: [
       { name: 'Python', level: 95 },
+      { name: 'C++', level: 90 },
+      { name: 'Java', level: 90 },
       { name: 'JavaScript/TypeScript', level: 90 },
       { name: 'C#/.NET', level: 85 },
       { name: 'Bash/Shell', level: 80 },
-      { name: 'SQL', level: 85 },
-      { name: 'Go', level: 70 },
+      { name: 'SQL', level: 85 }
     ],
   },
   {
@@ -24,12 +25,12 @@ const skillCategories = [
     icon: Shield,
     color: 'cyber-green',
     skills: [
-      { name: 'Penetration Testing', level: 90 },
-      { name: 'Network Security', level: 85 },
+      { name: 'Penetration Testing', level: 80 },
+      { name: 'Network Security', level: 90 },
       { name: 'SIEM/SOC Operations', level: 80 },
       { name: 'Cryptography', level: 85 },
-      { name: 'Malware Analysis', level: 75 },
-      { name: 'Web Application Security', level: 90 },
+      { name: 'Threat Modelling', level: 80 },
+      { name: 'Web Application Security', level: 80 },
     ],
   },
   {
@@ -39,11 +40,11 @@ const skillCategories = [
     color: 'cyber-accent',
     skills: [
       { name: 'Azure', level: 85 },
-      { name: 'AWS', level: 75 },
+      { name: 'GCP', level: 80 },
       { name: 'Docker', level: 90 },
       { name: 'Kubernetes', level: 85 },
       { name: 'CI/CD', level: 90 },
-      { name: 'Terraform', level: 70 },
+      { name: 'Git', level: 80 },
     ],
   },
   {
@@ -55,7 +56,7 @@ const skillCategories = [
       { name: 'PyTorch', level: 80 },
       { name: 'TensorFlow', level: 75 },
       { name: 'Machine Learning', level: 80 },
-      { name: 'Deep Learning', level: 75 },
+      { name: 'LLM Integration', level: 75 },
       { name: 'NLP', level: 70 },
       { name: 'Computer Vision', level: 65 },
     ],
@@ -71,7 +72,7 @@ const skillCategories = [
       { name: 'Network Architecture', level: 80 },
       { name: 'VPN/Firewalls', level: 85 },
       { name: 'DNS/DHCP', level: 80 },
-      { name: 'SDN', level: 70 },
+      { name: 'Network Security', level: 80 },
     ],
   },
   {
@@ -83,9 +84,10 @@ const skillCategories = [
       { name: 'Burp Suite', level: 90 },
       { name: 'Metasploit', level: 85 },
       { name: 'Nmap', level: 90 },
-      { name: 'OWASP ZAP', level: 85 },
       { name: 'Splunk', level: 75 },
-      { name: 'Ghidra/IDA', level: 70 },
+      { name: 'Wireshark', level: 85 },
+      { name: 'HPing3', level: 80 },
+      { name: 'Locust', level: 75 },
     ],
   },
 ];

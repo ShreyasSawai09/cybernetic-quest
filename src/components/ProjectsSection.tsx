@@ -19,7 +19,7 @@ const projects = [
     status: 'IN_PROGRESS',
     description: 'Building an AI-driven DDoS attack simulation engine for testing 5G network resilience. Uses machine learning to generate realistic attack patterns and analyze network vulnerabilities.',
     longDescription: 'A comprehensive security testing platform designed for 5G telecom infrastructure. The system uses PyTorch-based models to generate realistic DDoS attack patterns, simulating various attack vectors including volumetric attacks, protocol attacks, and application layer attacks. Includes real-time monitoring dashboards and automated vulnerability reporting.',
-    tech: ['Python', 'PyTorch', 'Kubernetes', 'Prometheus', 'Grafana', 'Go'],
+    tech: ['Python', 'Locust', 'HPing3', 'Kubernetes', 'LLM', 'Git'],
     highlights: [
       'ML-powered attack pattern generation',
       'Real-time network traffic analysis',
@@ -72,7 +72,7 @@ const projects = [
     status: 'COMPLETED',
     description: 'AI-powered parking management system using computer vision for real-time slot detection and predictive availability analysis.',
     longDescription: 'An intelligent parking system that uses computer vision to monitor parking lot occupancy in real-time. Features include license plate recognition, predictive availability modeling, mobile app integration, and automated billing. Achieved 98% accuracy in slot detection.',
-    tech: ['Python', 'TensorFlow', 'OpenCV', 'React Native', 'Node.js', 'AWS'],
+    tech: ['Python', 'TensorFlow', 'OpenCV', 'React Native', 'Node.js', 'MQTT'],
     highlights: [
       'Real-time computer vision detection',
       '98% slot detection accuracy',
@@ -91,7 +91,7 @@ const projects = [
     status: 'COMPLETED',
     description: 'Enterprise-grade contract lifecycle management platform processing 100K+ contracts daily with advanced security features.',
     longDescription: 'A large-scale enterprise application handling the complete contract lifecycle. Implemented secure microservices architecture with OAuth 2.0 authentication, role-based access control, and encrypted data storage. Integrated AI-powered contract analysis and risk assessment.',
-    tech: ['C#', '.NET Core', 'Azure', 'SQL Server', 'Docker', 'Kubernetes'],
+    tech: ['C#', '.NET Core', 'Azure', 'SQL Server', 'Adobe Sign', 'DocuSign', 'Salesforce', 'SAP'],
     highlights: [
       '100K+ daily contract processing',
       'OAuth 2.0 & RBAC implementation',
