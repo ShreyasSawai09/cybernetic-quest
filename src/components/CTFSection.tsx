@@ -4,30 +4,54 @@ import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 const ctfEvents = [
   {
     id: 1,
-    name: 'KTH CTF Competition',
+    name: 'Undutmaning 2025 CTF',
     type: 'CTF',
     position: '1st Place',
     year: '2025',
-    organizer: 'KTH Royal Institute of Technology',
-    description: 'Won first place in university-wide Capture The Flag cybersecurity competition, solving challenges in web exploitation, reverse engineering, and cryptography.',
+    organizer: 'Undutmaning',
+    description: 'Won first place in Undutmaning 2025 Capture The Flag competition, solving challenges across multiple cybersecurity domains.',
     categories: ['Web Exploitation', 'Reverse Engineering', 'Cryptography', 'Forensics'],
     teamSize: 'Team',
     status: 'VICTORY',
   },
   {
     id: 2,
-    name: 'Ericsson Internal CTF',
+    name: 'Ericsson Shield & Spear CTF',
     type: 'CTF',
     position: '1st Place',
     year: '2025',
     organizer: 'Ericsson',
-    description: 'Captured first place in Ericsson\'s internal cybersecurity challenge, demonstrating expertise in network security and penetration testing.',
-    categories: ['Network Security', 'Penetration Testing', 'OSINT', 'Binary Exploitation'],
+    description: 'Captured first place in Ericsson\'s internal Shield & Spear CTF, with focus on Incident Response and Report Writing alongside hands-on security challenges.',
+    categories: ['Incident Response', 'Report Writing', 'Network Security', 'Penetration Testing'],
     teamSize: 'Team',
     status: 'VICTORY',
   },
   {
     id: 3,
+    name: 'AWS Security Jam',
+    type: 'CTF',
+    position: '2nd Place',
+    year: '2025',
+    organizer: 'Amazon Web Services',
+    description: 'Identified and mitigated a cloud credential compromise by analyzing AWS CloudTrail logs via CloudWatch Logs Insights. Neutralized a backdoor IAM account, revoked compromised access keys, and remediated over-privileged Lambda Execution Roles with least-privilege controls. Filtered 1,500+ log records to isolate malicious IP activity and identify the threat actor\'s point of entry.',
+    categories: ['Cloud Security', 'IAM', 'CloudTrail', 'Incident Response'],
+    teamSize: 'Team',
+    status: 'RUNNER_UP',
+  },
+  {
+    id: 4,
+    name: 'CISPA Hackathon',
+    type: 'Hackathon',
+    position: 'Runner-Up',
+    year: '2025',
+    organizer: 'CISPA Helmholtz Center for Information Security',
+    description: 'Engineered an adversarial attack exploiting numerical non-determinism in linear algebra backends (OpenBLAS vs. BLIS) to force divergent VGG-model classifications. Developed an Adaptive Iterative Greedy Search with ±1/±2 pixel perturbations to navigate decision boundaries while minimizing L² distance. Optimized inference via NPZ-based batching and parallelized Apptainer container execution. Implemented an L² refinement loop to revert individual pixels, significantly boosting the final competition score.',
+    categories: ['Adversarial ML', 'Deep Learning', 'HPC', 'Optimization'],
+    teamSize: 'Team',
+    status: 'RUNNER_UP',
+  },
+  {
+    id: 5,
     name: 'AICTE Chattra Vishwakarma Awards',
     type: 'Hackathon',
     position: 'National Nominee',
@@ -42,6 +66,7 @@ const ctfEvents = [
 
 const statusConfig: Record<string, { color: string; label: string }> = {
   VICTORY: { color: 'cyber-green', label: '🏆 VICTORY' },
+  RUNNER_UP: { color: 'cyber-blue', label: '🥈 RUNNER-UP' },
   NOMINATED: { color: 'cyber-orange', label: '⭐ NOMINATED' },
   COMPLETED: { color: 'primary', label: '✓ COMPLETED' },
 };
@@ -159,7 +184,7 @@ const CTFSection = () => {
               { label: 'CTFs Competed', value: '10+', icon: Flag },
               { label: 'Flags Captured', value: '50+', icon: Shield },
               { label: 'Hackathons', value: '5+', icon: Skull },
-              { label: 'Wins', value: '3+', icon: Trophy },
+              { label: 'Wins', value: '5+', icon: Trophy },
             ].map((stat, index) => (
               <div
                 key={stat.label}
