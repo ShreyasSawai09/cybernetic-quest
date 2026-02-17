@@ -7,7 +7,7 @@ const ctfEvents = [
     name: 'Undutmaning 2025 CTF',
     type: 'CTF',
     position: '1st Place',
-    year: '2026',
+    year: '2025',
     organizer: 'Undutmaning',
     description: 'Won first place in Undutmaning 2025 Capture The Flag competition, solving challenges across multiple cybersecurity domains.',
     categories: ['Web Exploitation', 'Reverse Engineering', 'Cryptography', 'Forensics'],
