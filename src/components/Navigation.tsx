@@ -7,6 +7,8 @@ const navItems = [
   { label: 'Experience', href: '#experience', command: './missions' },
   { label: 'Skills', href: '#skills', command: './arsenal' },
   { label: 'Projects', href: '#projects', command: './operations' },
+  { label: 'CTFs', href: '#ctf', command: './battle_log' },
+  { label: 'Teaching', href: '#teaching', command: './instructor' },
   { label: 'Education', href: '#education', command: './training' },
   { label: 'Achievements', href: '#achievements', command: './trophies' },
   { label: 'Contact', href: '#contact', command: './connect' },
