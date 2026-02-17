@@ -10,7 +10,7 @@ const taPositions = [
     institution: 'KTH Royal Institute of Technology',
     location: 'Stockholm, Sweden',
     period: '2025',
-    status: 'ACTIVE',
+    status: 'COMPLETED',
     description:
       'Assisting students in hands-on ethical hacking labs covering penetration testing, vulnerability assessment, and exploit development. Guiding students through real-world attack scenarios in controlled environments.',
     responsibilities: [
